@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Volt.Mobile.Models
+﻿namespace Volt.Domain.Entities
 {
     public class Item
     {

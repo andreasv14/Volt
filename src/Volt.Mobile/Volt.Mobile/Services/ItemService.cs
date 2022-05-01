@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Volt.Mobile.Models;
+using Volt.Domain.Entities;
 using Volt.Mobile.Services.Interfaces;
 
 namespace Volt.Mobile.Services

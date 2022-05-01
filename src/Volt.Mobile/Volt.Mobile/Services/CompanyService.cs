@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Volt.Mobile.Models;
+using Volt.Domain.Entities;
+using Volt.Domain.Enums;
 using Volt.Mobile.Services.Interfaces;
 
 namespace Volt.Mobile.Services
@@ -13,6 +14,11 @@ namespace Volt.Mobile.Services
         }
 
         public Task<bool> DeleteItemAsync(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<IEnumerable<CompanyCategory>> GetCategoriesAsync()
         {
             throw new System.NotImplementedException();
         }

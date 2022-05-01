@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Volt.Mobile.Models;
+using Volt.Domain.Entities;
+using Volt.Domain.Enums;
 using Volt.Mobile.Services.Interfaces;
 
 namespace Volt.Mobile.Services.Design
@@ -17,6 +19,11 @@ namespace Volt.Mobile.Services.Design
             throw new System.NotImplementedException();
         }
 
+        public Task<IEnumerable<CompanyCategory>> GetCategoriesAsync()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public async Task<Company> GetItemAsync(int id)
         {
             throw new System.NotImplementedException();
@@ -27,8 +34,11 @@ namespace Volt.Mobile.Services.Design
             var starbucksCompany = new Company
             {
                 Id = 1,
-                Name = "Stabucks"
+                Name = "Stabucks",
+                Description = "This is a description",
             };
+
+            starbucksCompany.Categories.Add(Domain.Enums.CompanyCategory.Coffee);
 
             starbucksCompany.Items.Add(new Item
             {
@@ -41,8 +51,12 @@ namespace Volt.Mobile.Services.Design
             var salutCompany = new Company
             {
                 Id = 1,
-                Name = "Salut"
+                Name = "Salut",
+                Description = "This is a freddo espresso "
             };
+
+            
+
 
             salutCompany.Items.Add(new Item
             {

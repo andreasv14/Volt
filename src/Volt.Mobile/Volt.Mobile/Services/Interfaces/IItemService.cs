@@ -1,4 +1,4 @@
-﻿using Volt.Mobile.Models;
+﻿using Volt.Domain.Entities;
 
 namespace Volt.Mobile.Services.Interfaces
 {
