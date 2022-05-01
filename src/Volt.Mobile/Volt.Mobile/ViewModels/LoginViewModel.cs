@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Volt.Mobile.Views;
+﻿using Volt.Mobile.Views;
 using Xamarin.Forms;
 
 namespace Volt.Mobile.ViewModels
