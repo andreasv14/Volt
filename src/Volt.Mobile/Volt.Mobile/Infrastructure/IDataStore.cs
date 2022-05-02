@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Volt.Mobile.Services
+namespace Volt.Mobile.Infrastructure
 {
     public interface IDataStore<T>
     {

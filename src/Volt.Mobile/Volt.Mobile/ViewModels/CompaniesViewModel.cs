@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using Volt.Mobile.Models;
-using Volt.Mobile.Services.Interfaces;
+﻿using Volt.Mobile.Infrastructure;
 
 namespace Volt.Mobile.ViewModels
 {
@@ -8,19 +6,9 @@ namespace Volt.Mobile.ViewModels
     {
         #region Constructors
 
-        public CompaniesViewModel(
-            ICompanyService companyService)
+        public CompaniesViewModel()
         {
-            var x = companyService.GetItemsAsync().Result;
-
-            Companies = new ObservableCollection<Company>(x);
         }
-
-        #endregion
-
-        #region Properties
-
-        public ObservableCollection<Company> Companies { get; private set; }
 
         #endregion
     }

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Volt.Mobile.Views.CategoriesPage"
+             Shell.NavBarIsVisible="False"
+              BindingContext="{Binding CategoriesViewModel, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <SearchBar VerticalOptions="StartAndExpand" Text="{Binding Search}"></SearchBar>
+            <ScrollView>
+                <CollectionView x:Name="ItemsListView"
+                        ItemsSource="{Binding Categories}"
+                        SelectionMode="Single">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="15">
+                                <Label Text="{Binding Description}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

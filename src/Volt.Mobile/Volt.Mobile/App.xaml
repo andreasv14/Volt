@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Volt.Mobile.ViewModels"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Volt.Mobile.ViewModels" xmlns:viewmodels1="clr-namespace:Volt.Mobile.Infrastructure"
              x:Class="Volt.Mobile.App">
     <!--
         Define global resources and styles here, that apply to all pages in your app.
@@ -8,7 +8,7 @@
     <Application.Resources>
 
         <ResourceDictionary>
-            <viewmodels:ViewModelLocator x:Key="Locator" />
+            <viewmodels1:ViewModelLocator x:Key="Locator" />
         </ResourceDictionary>
 
         <ResourceDictionary>

@@ -2,8 +2,8 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Volt.Mobile.Models;
-using Volt.Mobile.Views;
+using Volt.Domain.Entities;
+using Volt.Mobile.Infrastructure;
 using Xamarin.Forms;
 
 namespace Volt.Mobile.ViewModels

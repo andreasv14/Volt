@@ -1,4 +1,5 @@
-﻿using Volt.Mobile.Views;
+﻿using Volt.Mobile.Infrastructure;
+using Volt.Mobile.Views;
 using Xamarin.Forms;
 
 namespace Volt.Mobile.ViewModels
@@ -15,7 +16,7 @@ namespace Volt.Mobile.ViewModels
         private async void OnLoginClicked(object obj)
         {
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            await Shell.Current.GoToAsync($"//{nameof(CategoriesPage)}");
         }
     }
 }
