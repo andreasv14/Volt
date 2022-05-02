@@ -9,8 +9,10 @@
             <SearchBar VerticalOptions="StartAndExpand" Text="{Binding Search}"></SearchBar>
             <ScrollView>
                 <CollectionView x:Name="ItemsListView"
-                        ItemsSource="{Binding Categories}"
-                        SelectionMode="Single">
+                                ItemsSource="{Binding Categories}"
+                                SelectedItem="{Binding SelectedCategory}"
+                                SelectionMode="Single"
+                                SelectionChangedCommand="{Binding SelectCategoryCommand}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="15">

@@ -1,26 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Volt.Mobile.Views.CompaniesPage"
+             x:Class="Volt.Mobile.Views.CompaniesPage"  
              BindingContext="{Binding CompaniesViewModel, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <CollectionView x:Name="CompaniesList"
-                ItemsSource="{Binding Companies}"
-                SelectionMode="Single">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="10">
-                        <Label Text="{Binding Name}" 
-                            LineBreakMode="NoWrap" 
-                            Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" />
-                        <Label Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+        <Label Text="{Binding CategoryId}" />
     </ContentPage.Content>
 </ContentPage>

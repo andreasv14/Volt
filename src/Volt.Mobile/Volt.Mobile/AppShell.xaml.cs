@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Volt.Mobile.ViewModels;
-using Volt.Mobile.Views;
+﻿using Volt.Mobile.Views;
 using Xamarin.Forms;
 
 namespace Volt.Mobile
@@ -11,7 +8,7 @@ namespace Volt.Mobile
         public AppShell()
         {
             InitializeComponent();
-            //Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
+            Routing.RegisterRoute(nameof(CompaniesPage), typeof(CompaniesPage));
             //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }
 
