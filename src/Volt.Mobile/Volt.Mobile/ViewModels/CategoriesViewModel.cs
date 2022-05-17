@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Volt.Dtos;
 using Volt.Mobile.Infrastructure;
-using Volt.Mobile.Services;
+using Volt.Mobile.Services.Interfaces;
 using Xamarin.Forms;
 
 namespace Volt.Mobile.ViewModels

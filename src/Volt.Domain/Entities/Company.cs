@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using Volt.Domain.Common;
 using Volt.Domain.Enums;
 
 namespace Volt.Domain.Entities
 {
-    public class Company
+    public class Company : AuditableEntity
     {
         public int Id { get; set; }
 

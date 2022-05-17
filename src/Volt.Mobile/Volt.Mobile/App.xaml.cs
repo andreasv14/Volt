@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Volt.Mobile.Services;
 using Volt.Mobile.Services.Design;
+using Volt.Mobile.Services.Interfaces;
 using Volt.Mobile.ViewModels;
 using Volt.WebClientAPI;
 using Xamarin.Forms;

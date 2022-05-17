@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Volt.Dtos;
+using Volt.Mobile.Services.Interfaces;
 using Volt.WebClientAPI;
 
 namespace Volt.Mobile.Services
@@ -52,6 +53,11 @@ namespace Volt.Mobile.Services
             }
 
             _categoriesSource.AddOrUpdate(categories);
+        }
+
+        public CategoryDto GetCategory(int categoryId)
+        {
+            return _categoriesSource.Items.FirstOrDefault(c => c.Id == categoryId);
         }
 
         #endregion
