@@ -1,2 +1,2 @@
 # Volt
-Volt is a delivery system.
+Volt is a platform that provides delivery services between business and customers.
